@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+            background: rgb(17, 16, 16);
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+        }
+
+        img {
+            width: 100%; 
+            height: auto;
+            filter: blur(0.8px);
+            filter: sepia(0) saturate(0) brightness(0.3);
+            border: 5px solid rgb(255, 0, 0);
+        }
+
+        figcaption {
+            position: absolute;
+            left: 10;
+            top: 50%; 
+            transform: translateY(-50%);
+            padding-left: 5%;
+            font-style: italic; 
+            font-size: 450%; 
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            opacity: 30%;
+            background: linear-gradient(to right, rgb(17, 15, 15), rgb(255, 255, 255));
+            pointer-events: none;
+        }
+
+        .small-text {
+            font-size: 18px; 
+            font-style: normal;
+            color: lightgrey; 
+        }
+
+        .separator {
+            border-top: 2px solid rgb(255, 0, 0); 
+            width: 100%; 
+            margin: 10px 0;
+        }
+
+        .text-section {
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .text-section h3 {
+            font-size: 28px;
+            color: rgb(255, 0, 0); 
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="About-us-background.jpg" alt="Description of the image">
+        <div class="gradient-overlay"></div>
+        <figcaption>When you are here,<br>you're home.<br>
+            <span class="small-text">(And so is all your entertainment)</span>
+        </figcaption>
+    </div>
+
+    <div class="text-section">
+        <h3>Our Story</h3>
+        <p>
+            Our journey began with a simple vision: to create a space where people can find comfort and joy in entertainment. Over the years, we've grown and evolved, continually adapting to the changing tastes and needs of our visitors.
+        </p>
+        <p>
+            We've curated a collection of experiences and content that cater to a wide range of preferences. Whether you enjoy the latest blockbuster movies, timeless classics, or immersive virtual experiences, we strive to provide you with a memorable and enjoyable journey.
+        </p>
+        <p>
+            Our story is one of passion, dedication, and a commitment to excellence. We are proud to be your trusted source of entertainment and look forward to continuing this journey with you.
+        </p>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="text-section">
+        <h3>Our Vision</h3>
+        <p>
+            Our vision is to remain a beacon of comfort and innovation in the world of entertainment. We aim to continually push the boundaries of what's possible, delivering cutting-edge experiences that captivate and inspire our visitors.
+        </p>
+        <p>
+            We believe in fostering a community of like-minded individuals who share a passion for entertainment. By offering unique and engaging content, we strive to create an inclusive environment where everyone feels welcome and valued.
+        </p>
+        <p>
+            As we move forward, we are committed to staying ahead of the curve, embracing new technologies and trends, and offering exceptional experiences that stand the test of time.
+        </p>
+    </div>
+</body>
+</html>

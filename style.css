@@ -263,7 +263,7 @@ header .content .btns button{
   padding: 6px 12px;
   border-radius: 20px;
   background-color:  red!important;
-  border: 2px solid red;
+  border: 2px solid #ff0000;
   color: #fff;
   margin-right: 10px;
   font-family: Poppins, sans-serif;
@@ -1012,6 +1012,8 @@ display: unset;
   .cato_bx2 button .year_bx .li_change {
     color: red;
 }
+
+
 
 
 
