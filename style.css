@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+
+.reddit-sans-Fonterito {
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
 html {
     scroll-behavior: smooth;
 }
