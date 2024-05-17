@@ -189,12 +189,15 @@ header nav .end_bx .user img {
   border-radius: 15px;
   display: none;
 }
+ .container .star-widget .movie-info{
+  color:rgb(255, 255, 255, 0.7); 
+ }
 .container .star-widget .Rate {
   padding-top: 20px;
 }
 .container .text {
   font-size: 25px;
-  color: #666;
+  color:rgb(255, 255, 255, 0.7);
   font-weight: 500;
 }
 .container .post .edit {
@@ -211,7 +214,7 @@ header nav .end_bx .user img {
   left: 550px;
   top: 0px;
   font-size: 25px;
-  color: #666;
+  color: rgb(255, 255, 255, 0.7);
   font-weight: 500;
 }
 .container .post .edit:hover {
@@ -222,7 +225,7 @@ header nav .end_bx .user img {
 }
 .star-widget label {
   font-size: 40px;
-  color: #444;
+  color: rgb(255, 255, 255, 0.7);
   padding: 10px;
   float: right;
   transition: all 0.2s ease;
