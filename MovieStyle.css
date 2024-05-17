@@ -214,6 +214,7 @@ header nav .end_bx .user img {
   color: #fff;
   cursor: pointer;
 }
+
 .cato_bx .cato_left_right:nth-last-child(1) {
   right: 0%;
 }
