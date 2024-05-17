@@ -170,12 +170,12 @@ header nav .end_bx .user img {
 .container {
   position: absolute;
   width: 0px;
-  left: 660px;
-  top: 300px;
+  left: 365px;
+  top: 230px;
   padding: 0px;
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 .container .star-widget {
@@ -199,7 +199,7 @@ header nav .end_bx .user img {
 }
 .container .post .edit {
   position: absolute;
-  left: 970px;
+  left: 570px;
   top: 170px;
   font-size: 16px;
   color: red;
@@ -208,7 +208,7 @@ header nav .end_bx .user img {
 }
 .container .star-widget .Rate {
   position: absolute;
-  left: 900px;
+  left: 550px;
   top: 0px;
   font-size: 25px;
   color: #666;
