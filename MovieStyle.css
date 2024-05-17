@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.reddit-sans-Fonterito {
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(17, 16, 16) !important;
+}
+
+header nav {
+  width: 100%;
+  height: 10%;
+  /*border: 1.3px solid rgb(255,255,255,.1);*/
+
+  padding: 0px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.end_bx {
+  /*border: 1px solid white;*/
+  display: flex;
+  align-items: center;
+}
+
+header nav .logo img {
+  width: 100px;
+}
+
+header nav .end_bx ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header nav .end_bx ul li {
+  margin: 0px 30px;
+  position: relative;
+}
+header nav .end_bx ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  transition: 0.3s linear;
+}
+/*new*/
+header nav .end_bx ul li:nth-child(3) {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+header nav .end_bx ul li:nth-child(3):hover {
+  color: #fff;
+}
+/*end new*/
+
+header nav .end_bx ul a:hover {
+  color: #fff;
+}
+/* NEW */
+header nav .end_bx ul li:nth-child(3) .fa-solid {
+  font-size: 12px;
+  margin: 2px 0px 0px 3px;
+  transition: 0.3s linear;
+}
+
+header nav .end_bx ul li:nth-child(3):hover .fa-solid {
+  transform: rotate(180deg);
+}
+
+/*nav other list start*/
+header nav .end_bx ul li .list {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 30px;
+  z-index: 1;
+  padding: 10px;
+}
+header nav .end_bx ul li .list::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(184, 184, 184, 0.1) !important;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+header nav .end_bx ul li .list::after {
+  content: "";
+  position: absolute;
+  border-left: 15px solid rgb(184, 184, 184, 0.1);
+  z-index: -1;
+}
+
+/*nav other list end*/
+
+/* end new */
+header nav .end_bx .search {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+header nav .end_bx .search input {
+  padding: 3px 0px 3px 8px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  width: 0px;
+}
+header nav .end_bx .search i {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+header nav .end_bx .search i:hover {
+  color: #fff;
+}
+
+/* javascript classes start*/
+header nav .end_bx .search .search_input {
+  width: 110px;
+}
+/* javascript classes start*/
+
+header nav .end_bx .bell {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  margin: 0px 35px;
+}
+header nav .end_bx .bell:hover {
+  color: #fff;
+}
+header nav .end_bx .user {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+header nav .end_bx .user img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.trending_bx {
+  width: 90%;
+  height: auto;
+  border-bottom: 2px solid rgb(184, 184, 184, 0.1);
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trending_bx li {
+  list-style: none;
+  transition: 0.3s linear;
+}
+
+.trending_bx li a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 13px;
+  transition: 0.3s linear;
+}
+.trending_bx li a:hover {
+  color: #fff;
+}
+
+.trending_bx li .fa-solid {
+  margin-right: 5px;
+}
+.trending_bx li a span {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: transparent !important;
+  border-radius: 50%;
+  bottom: -10px;
+  left: 45%;
+}
+/* Trending box active classes start */
+.trending_bx li .active {
+  font-size: 15px;
+  color: #fff;
+}
+.trending_bx li .active span {
+  background: red !important;
+}
+/* Trending box active classes end */
+
+/* Category Box Start*/
+.cato_bx {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  padding: 20px 40px 20px 0px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  z-index: 999;
+}
+
+.cato_bx::-webkit-scrollbar {
+  display: none;
+}
+
+.cato_bx button {
+  padding: 4px 30px;
+  background: red;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.cato_bx button:hover {
+  background: rgb(184, 184, 184, 0.1);
+}
+
+.cato_bx .cato_left_right {
+  position: sticky;
+  right: 3%;
+  color: #fff;
+  cursor: pointer;
+}
+.cato_bx .cato_left_right:nth-last-child(1) {
+  right: 0%;
+}
+
+.cato_bx .cato_left_right i {
+  transform: rotate(90deg);
+  transition: 0.3s linear;
+}
+
+.cato_bx .cato_left_right:nth-last-child(1) i {
+  transform: rotate(-90deg);
+}
+.cato_bx .cato_button_active {
+  background: rgb(184, 184, 184, 0.2) !important;
+}
+
+/*Movie Box*/
+.movie_bx_1 {
+  /* position: relative; */
+  width: 100%;
+  height: 260px;
+  /* border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.movie_bx_1::-webkit-scrollbar {
+  display: none;
+}
+
+/* movie extra box  */
+/* 
+  .movie_bx_1 .movie_bxx {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+     border: 1px solid #fff; 
+  } */
+
+/* movies box java class start  */
+
+.movie_bx_1 .movie_box_active {
+  display: none;
+}
+
+/* movies box java class end  */
+
+.movie_bx_1 .card {
+  min-width: 140px;
+  height: 260px;
+  /* border: 1px solid #fff;  */
+  margin: 0px 5px;
+}
+
+.movie_bx_1 .card:nth-last-child(1) {
+  margin: 0px 5px 1px 5px;
+}
+
+.movie_bx_1 .card a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.movie_bx_1 .card a img {
+  width: 100%;
+  height: 80%;
+  border-radius: 8px;
+}
+
+.movie_bx_1 .card a .content {
+  width: 100%;
+  height: 15%;
+  /* border: 1px solid #fff; */
+  margin-top: 5px;
+}
+
+.movie_bx_1 .card a .content h5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.movie_bx_1 .card a .content h6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie_bx_1 .card a .content h6 span {
+  color: rgb(255, 255, 255, 0.6);
+  font-weight: lighter;
+}
+
+.movie_bx_1 .card a .content h6 .rate {
+  display: flex;
+  align-items: auto;
+}
+
+.movie_bx_1 .card a .content h6 .rate .fa-solid {
+  margin-right: 7px;
+  font-size: 9px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.movie_bx_1 .card a .content h6 .rate .fa-solid:nth-last-child(2) {
+  color: yellow;
+  margin: 1px;
+}
+
+.movie_bx_1 .card a .content h6 .rate h6 {
+  color: yellow;
+  margin-top: 3px;
+  font-size: 11px;
+  height: 5px;
+}
+
+.movie_bx_1 button {
+  position: absolute;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: none !important;
+  left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.movie_bx_1 button::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255, 0.5) !important;
+  border-radius: 50%;
+  left: -5px;
+  top: -1px;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+
+.movie_bx_1 button:hover::before {
+  background: rgb(255, 0, 0, 0.5) !important;
+}
+
+.movie_bx_1 button:nth-child(2) {
+  left: 98%;
+}
+
+.movie_bx_1 button:nth-child(1) i {
+  transform: rotate(90deg);
+}
+.movie_bx_1 button:nth-child(2) i {
+  transform: rotate(-90deg);
+}
+
+.movie_bx_1 button:nth-child(2)::before {
+  left: -7px;
+  top: -1px;
+}
+
+.movie_bx_2 {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  overflow: unset;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.movie_bx_2 .card {
+  width: 140px;
+  margin: 10px auto;
+}

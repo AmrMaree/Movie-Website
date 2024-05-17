@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
-<title>GYMA Website</title>
+<title>GYMA</title>
 <link rel="shortcut icon" href="img/Logo.png">
-</head>
+</head> 
 
 <body>
     <header>
@@ -25,8 +25,8 @@
             <div class="end_bx">
                 <ul>
                    <li><a href="#">Home</a></li>
-                   <li><a href="#">Movies</a></li>
-                   <li><a href="#"> Category <i class="fa-solid fa-angle-down"></i> </a>
+                   <li><a href="movies.html">Movies</a></li>
+                   <!-- <li><a href="#"> Category <i class="fa-solid fa-angle-down"></i> </a>
                     <div class="list">
                         <a href="#">Action</a>
                         <a href="#">Crime</a>
@@ -35,14 +35,10 @@
                         <a href="#">Animation</a>
                         <a href="#"></a>
                         <a href="#"></a>
-
-
-
                     </div>
-                </li>
-        
+                </li> -->
                    <li><a href="#">Review</a></li>
-                   <li><a href="Aboutus.html">About us</a></li>
+                   <li><a href="#">About us</a></li>
                 </ul>
                 <div class="search">
                     <input type="text" placeholder="Search movies.." id="search">
@@ -76,6 +72,7 @@
 
         </div>
     </header>
+
     <!-- Trending box start-->
     <div class="trending_bx">
         <li><a href="#" class="active"><i class="fa-solid fa-angles-up"></i>Trends Now<span></span></a></li>
@@ -84,88 +81,228 @@
         <li><a href="#"><i class="fa-solid fa-plus"></i>Recently Added<span></span></a></li>
     </div>
 
-<!-- Category box start-->
-    <div class="cato_bx" id="cato_bx">
-        <button>Action</button>
-        <button>Crime</button>
-        <button>Adventure</button>
-        <button>Biography</button>
-        <button>Animation</button>
-        <button>Comedy</button>
-        <button>Documentry</button>
-        <button>Drama</button>
-        <button>WebSeries</button>
-        <button>18+</button>
-        <button>SciFi</button>
-        <button>Horror</button>
-        <div class="cato_left_right">
-            <i class="fa-solid fa-angle-down" id="left_scroll"></i>
+    
+        <!-- Category box start-->
+        <div class="cato_bx" id="cato_bx">
+            <button>Action</button>
+            <button>Crime</button>
+            <button>Adventure</button>
+            <button>Biography</button>
+            <button>Animation</button>
+            <button>Comedy</button>
+            <button>Documentry</button>
+            <button>Drama</button>
+            <button>WebSeries</button>
+            <button>18+</button>
+            <button>SciFi</button>
+            <button>Horror</button>
+            <div class="cato_left_right">
+                <i class="fa-solid fa-angle-down" id="left_scroll"></i>
+            </div>
+            <div class="cato_left_right">
+                <i class="fa-solid fa-angle-down" id="right_scroll"></i>
+            </div>
         </div>
-        <div class="cato_left_right">
-            <i class="fa-solid fa-angle-down" id="right_scroll"></i>
+    
+    
+            <!-- Movie box start-->
+            <div class="movie_bx_1" id="mvoes_bx_1">
+                <button id="left_scroll1"> <i class="fa-solid fa-angle-down"></i></button>
+                <button id="right_scroll1"><i class="fa-solid fa-angle-down"></i></button>
+            <div class="card">
+                <a href="#">
+                    <img src="mimg/venom2.webp" alt="venom poster">
+                    <div class="content">
+                        <h5>Venom 2</h5>
+                        <h6><span>2018</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>6.5</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+              
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="mimg/aot.jpg" alt="Attack on titan">
+                    <div class="content">
+                        <h5>Attack on Titan</h5>
+                        <h6><span>2023</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>9.5</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="John Wick 3">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div> <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="mimg/john wick.jpg" alt="venom poster">
+                    <div class="content">
+                        <h5>John Wick: 3</h5>
+                        <h6><span>2019</span>
+                            <div class="rate">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <h6>7.4</h6>
+                               
+                            </div>
+    
+                        </h6>
+                    </div>
+                    
         </div>
-    </div>
-
-    <!-- Movie box start-->
-    <div class="movie_bx_1" id="mvoes_bx_1">
-            <button id="left_scroll1"> <i class="fa-solid fa-angle-down"></i></button>
-            <button id="right_scroll1"><i class="fa-solid fa-angle-down"></i></button>
         <div class="card">
             <a href="#">
-                <img src="mimg/venom2.webp" alt="venom poster">
-                <div class="content">
-                    <h5>Venom 2</h5>
-                    <h6><span>2018</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>6.5</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-          
-        </div>
-        <div class="card">
-            <a href="#">
-                <img src="mimg/aot.jpg" alt="Attack on titan">
-                <div class="content">
-                    <h5>Attack on Titan</h5>
-                    <h6><span>2023</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>9.5</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="John Wick 3">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
                 <img src="mimg/john wick.jpg" alt="venom poster">
                 <div class="content">
                     <h5>John Wick: 3</h5>
@@ -177,151 +314,13 @@
                             <h6>7.4</h6>
                            
                         </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div> <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
-                    </h6>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="#">
-                <img src="mimg/john wick.jpg" alt="venom poster">
-                <div class="content">
-                    <h5>John Wick: 3</h5>
-                    <h6><span>2019</span>
-                        <div class="rate">
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-eye"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <h6>7.4</h6>
-                           
-                        </div>
-
+    
                     </h6>
                 </div>
                 
     </div>
-    <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-            
-</div>
-    </div>
-    <!-- Movie box End-->
+        </div>
+        <!-- Movie box End-->
 
     <!-- Video box Start--> 
     <div class="video_bx">
@@ -364,309 +363,10 @@
             <img src="img/121215.jpg" alt="" class="video_1">
         </div>
     </div>
-    
-    
-    
-    
-    
-    
+
     <!-- Video box End-->
 
-     <!-- Trending box2 start-->
-     <div class="trending_bx" style="margin-top: 20px;">
-        <li><a href="#" class="active"><i class="fa-solid fa-photo-film"></i>Movies<span></span></a></li>
-        <li><a href="#"><i class="fa-solid fa-film"></i>Series<span></span></a></li>
-        <li><a href="#"><i class="fa-solid fa-check"></i>Original Series<span></span></a></li>
-        <li><a href="#">Trailer<span></span></a></li>
-    </div>
-    <div class="cato_bx cato_bx2">
-        <div class="left_cato">
-        <button>Sort by:</button>
-        <button>All</button>
-        <button>Latest</button>
-        <button id="year">Year <i class="fa-solid fa-angle-down"></i>
-        <div class="year_bx">
-            <li>2023</li>
-            <li>2022</li>
-            <li>2021</li>
-            <li>2020</li>
-            <li>2019</li>
-            <li>2018</li>
-            <li>2017</li>
-            <li>2016</li>
-            <li>2015</li>
-            <li>2014</li>
-        </div>
-        </button>
-        <button id="a-z">A-Z <i class="fa-solid fa-angle-down"></i>
-            <div class="year_bx letter_bx">
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
-                <li>F</li>
-                <li>G</li>
-                <li>H</li>
-                <li>T</li>
-                <li>Z</li>
-            </div></button>
-    </div>
-       <div class="right_cato">
-        <i class="fa-solid fa-star"></i>
-       <input type="range" name="" id="" min="4.2" max="9.9">
-       <span>7.0</span>
-       </div>
-    </div>
-
-<div class="movie_bx_1 movie_bx_2">
-    <div class="card">
-        <a href="#">
-            <img src="mimg/venom2.webp" alt="venom poster">
-            <div class="content">
-                <h5>Venom 2</h5>
-                <h6><span>2018</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>6.5</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-      
-    </div>
-    <div class="card">
-        <a href="#">
-            <img src="mimg/aot.jpg" alt="Attack on titan">
-            <div class="content">
-                <h5>Attack on Titan</h5>
-                <h6><span>2023</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>9.5</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="John Wick 3">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div> <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="#">
-            <img src="mimg/john wick.jpg" alt="venom poster">
-            <div class="content">
-                <h5>John Wick: 3</h5>
-                <h6><span>2019</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>7.4</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-            
-</div>
-<div class="card">
-    <a href="#">
-        <img src="mimg/john wick.jpg" alt="venom poster">
-        <div class="content">
-            <h5>John Wick: 3</h5>
-            <h6><span>2019</span>
-                <div class="rate">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-eye"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <h6>7.4</h6>
-                   
-                </div>
-
-            </h6>
-        </div>
     
-</div>
-<div class="card">
-    <a href="#">
-        <img src="mimg/john wick.jpg" alt="venom poster">
-        <div class="content">
-            <h5>John Wick: 3</h5>
-            <h6><span>2019</span>
-                <div class="rate">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-eye"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <h6>7.4</h6>
-                   
-                </div>
-
-            </h6>
-        </div>
-    
-</div>
-<div class="card">
-    <a href="#">
-        <img src="mimg/john wick.jpg" alt="venom poster">
-        <div class="content">
-            <h5>John Wick: 3</h5>
-            <h6><span>2019</span>
-                <div class="rate">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-eye"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <h6>7.4</h6>
-                   
-                </div>
-
-            </h6>
-        </div>
-    
-</div>
-</div>
     <script src="app.js"></script>
 </body>
 
