@@ -1,252 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device width",initial-scale=1.0>
+    <link rel="stylesheet" href="AboutUsStyle.css"> 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
+    <!-- bootsrap cdn link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <title>About Us</title>
-    <style>
-
-        body {
-            background:black;
-            color: rgb(253, 253, 253);
-            margin: 0;
-            font-family: "Reddit Sans", sans-serif; 
-            font-optical-sizing: auto;
-            font-weight: 250;
-            font-style: normal; 
-        }
-
-        .image-container {
-            position: relative;
-            width: 100%;
-        
-        }
-
-        img {
-            width: 100%; 
-            height: auto;
-            filter: blur(0.8px);
-            filter: sepia(0) saturate(0) brightness(0.1);
-        }
-
-        figcaption {
-            position: absolute;
-            left: 10;
-            top: 50%; 
-            transform: translateY(-50%);
-            padding-left: 5%;
-            font-style: italic; 
-            font-size: 80px; 
-            color: rgb(255, 255, 255);
-            background-color: rgba(255, 255, 255, 0);
-            font-weight: 600;
-            margin-left: 100px ;
-        }
-
-        .gradient-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%; 
-            height: 100%; 
-            opacity: 30%;
-            background: linear-gradient(to right, rgb(17, 15, 15), rgb(255, 255, 255));
-            pointer-events: none;
-        }
-
-        .small-text {
-            font-size: 25px; 
-            font-style: normal;
-            color: red;
-            font-weight: 900; 
-            margin-top: 15px;
-        }
-
-        .separator {
-            border-top: 2px solid rgb(124, 122, 122); 
-            width: 100%; 
-            margin: 10px 0;
-        }
-
-        .text-section {
-            color: rgb(255, 253, 253);
-            padding: 10px;
-            margin-bottom: 20px;
-            font-size: 25px;
-            margin-left: 100px;
-        }
-
-        .text-section h3 {
-            font-size: 40px;
-            color:red; 
-            margin-bottom: 50px;
-            font-weight: 400;
-            
-
-        }
-        
- nav{
-  width: 100%;
-  height: 10%;
-  border: 1.3px solid rgba(197, 176, 176, 0.1);
-  padding: 0px 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo, .end_bx{
-  /*border: 1px solid white;*/
-  display: flex;
-  align-items: center;
-}
-
- nav .logo img{
-  width:100px;
-}
-
- nav .end_bx ul{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  
-}
- nav .end_bx ul li{
-  margin:0px 30px;
-  position: relative;
-  
-}
- nav .end_bx ul li a{
- text-decoration: none;
- color: rgb(255,255,255,.7);
- font-size: 14px;
-  font-family: Poppins, sans-serif;
-  transition: .3s linear ;
-}
-/*new*/
- nav .end_bx ul li:nth-child(3) {
-  color: rgb(255, 255, 255, .7);
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  transition: .3s linear;
-  cursor: pointer;
-}
- nav .end_bx ul li:nth-child(3):hover {
-  color: #fff;
-}
-/*end new*/
-
-
- nav .end_bx ul a:hover{
-  color: #fff;
- }
-  /* NEW */
- nav .end_bx ul li:nth-child(3) .fa-solid {
-  font-size: 12px;
-  margin: 2px 0px 0px 3px;
-  transition: .3s linear;
-  
-}
-
- nav .end_bx ul li:nth-child(3):hover .fa-solid {
- transform: rotate(180deg);
-}
-
-/*nav other list start*/
- nav .end_bx ul li .list{
-  position: absolute;
-  width: 150px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  top: 30px;
-  z-index:1 ;
-  padding: 10px;
-
-}
- nav .end_bx ul li .list::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgb(184, 184, 184, .1)!important;
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  z-index: -1;
-}
-
- nav .end_bx ul li .list::after{
-  content: '';
-  position: absolute;
- border-left: 15px solid rgb(184, 184, 184, .1);
-  z-index: -1;
-}
-
-/*nav other list end*/
-
-
-
-/* end new */
- nav .end_bx .search{
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
- nav .end_bx .search input{
-  padding: 3px 0px 3px 8px;
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  background: transparent;
-  color: #fff;
-  transition: 1s linear;
-  -webkit-transition: 1s linear;
-  width: 0px;
-}
- nav .end_bx .search i{
-  color: rgb(255,255,255,.7);
-  font-size: 13px;
-  cursor: pointer;
-  transition: .4s linear;
-}
- nav .end_bx .search i:hover{
-  color: #fff; 
-}
-
-/* javascript classes start*/
-nav .end_bx .search .search_input {
-width:110px;
-}
-/* javascript classes start*/
-
- nav .end_bx .bell{
-  color: rgb(255,255,255,.7);
-  font-size: 13px;
-  cursor: pointer;
-  transition: .3s linear;
-  margin: 0px 35px; 
-}
- nav .end_bx .bell:hover{
-  color: #fff;
-}
- nav .end_bx .user{
-  width: 20px;
-  height: 20px;
-  border: 1px solid white;
-  border-radius: 50%;
-}
- nav .end_bx .user img{
-width: 100%;
-height: 100%;
-border-radius: 50%;
-cursor: pointer;
-}
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>GYMA</title>
+    <link rel="shortcut icon" href="img/Logo.png">
 </head>
 <body>
-    <div>
+    <header>
         <nav>
             <a href="/" class="logo"><img src="img/Logo.png"></a> 
              <div class="end_bx">
@@ -268,7 +42,7 @@ cursor: pointer;
                  </div>
              </div>
          </nav>
-    </div>
+    </header>
     <div class="image-container">
         <img src="images/About-us-background.jpg" alt="Description of the image">
         <div class="gradient-overlay"></div>

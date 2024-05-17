@@ -44,12 +44,12 @@
 
 
     <div class="cato_bx" id="cato_bx">
-        <button>Action</button>
-        <button>Romance</button>
-        <button>Adventure</button>
-        <button>Animation</button>
-        <button>Comedy</button>
-        <button>Drama</button>
+        <button onclick="loadMovies('Action')">Action</button>
+        <button onclick="loadMovies('Romance')">Romance</button>
+        <button onclick="loadMovies('Adventure')">Adventure</button>
+        <button onclick="loadMovies('Animation')">Animation</button>
+        <button onclick="loadMovies('Comedy')">Comedy</button>
+        <button onclick="loadMovies('Drama')">Drama</button>
      
         <!-- <div class="cato_left_right">
             <i class="fa-solid fa-angle-down" id="left_scroll"></i>
@@ -80,66 +80,72 @@
                 <li>2014</li>
             </div>
             </button>
-            <button id="a-z">A-Z <i class="fa-solid fa-angle-down"></i>
-                <div class="year_bx letter_bx">
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                    <li>E</li>
-                    <li>F</li>
-                    <li>G</li>
-                    <li>H</li>
-                    <li>T</li>
-                    <li>Z</li>
-                </div></button>
         </div>
-        <div class="right_cato">
-            <i class="fa-solid fa-star"></i>
-            <input type="range" name="" id="" min="4.2" max="9.9">
-            <span>8.0</span>
-       </div>
     </div>
 
-<div class="movie_bx_1 movie_bx_2">
-    <div class="card">
-        <a href="#">
-            <img src="mimg/darkknight.jpg" alt="darkknight">
+<div class="movie_bx_1 movie_bx_2" id="movies-container">
+  
+    <div class="allCard">
+        <div class="card">
+            <a href="#">
+                <img src="mimg/darkknight.jpg" alt="darkknight">
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6><span>2008</span>
+                        Action
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.0</h6>
+                            
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+                <div class="content">
+                    <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+                    <br>
+                    <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+                    <br>
+                    <p>
+                        Action
+                    </p>
+                </div>
+        </div>
+    </div>
+    <div class="allCard">
+        <div class="card">
+            <a href="#">
+                <img src="mimg/aot.jpg" alt="Attack on titan">
+                <div class="content">
+                    <h5>Attack on Titan</h5>
+                    <h6><span>2023</span>
+                        Romance
+                        <div class="rate">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <h6>9.5</h6>
+                           
+                        </div>
+    
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
             <div class="content">
-                <h5>The Dark Knight</h5>
-                <h6><span>2008</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>9.0</h6>
-                       
-                    </div>
-
-                </h6>
+                <p><u>Description:</u><br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+                <br>
+                <p><u>Actors</u>:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+                <p>Romance</p>
             </div>
-        </a>
-      
+        </div>
     </div>
-    <div class="card">
-        <a href="#">
-            <img src="mimg/aot.jpg" alt="Attack on titan">
-            <div class="content">
-                <h5>Attack on Titan</h5>
-                <h6><span>2023</span>
-                    <div class="rate">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <h6>9.5</h6>
-                       
-                    </div>
-
-                </h6>
-            </div>
-        </a>
-    </div>
-    <div class="card">
+    <!-- <div class="card">
         <a href="#">
             <img src="mimg/john wick.jpg" alt="John Wick 3">
             <div class="content">
@@ -156,7 +162,15 @@
                 </h6>
             </div>
         </a>
-    </div> <div class="card">
+    </div> 
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/Primal-fear.jpg" alt="Primal Fear">
             <div class="content">
@@ -175,6 +189,13 @@
         </a>
     </div>
     <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/lalaland.jpg" alt="lalaland">
             <div class="content">
@@ -190,7 +211,14 @@
     
                 </h6>
             </div>
-        
+        </a>
+    </div>
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
     </div>
      <div class="card">
         <a href="#">
@@ -209,7 +237,15 @@
                 </h6>
             </div>
         </a>
-    </div> <div class="card">
+    </div> 
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/sham.jpg" alt="Shazam">
             <div class="content">
@@ -226,7 +262,15 @@
                 </h6>
             </div>
         </a>
-    </div> <div class="card">
+    </div> 
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/venom2.webp" alt="venom2">
             <div class="content">
@@ -243,7 +287,15 @@
                 </h6>
             </div>
         </a>
-    </div> <div class="card">
+    </div> 
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/peter.jpg" alt="peter rabbit">
             <div class="content">
@@ -260,7 +312,15 @@
                 </h6>
             </div>
         </a>
-    </div> <div class="card">
+    </div> 
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/fightclub.jpg" alt="fightclub">
             <div class="content">
@@ -277,7 +337,15 @@
                 </h6>
             </div>
         </a>
-    </div> <div class="card">
+    </div> 
+    <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/jumanji2.jpg" alt="Jumanji">
             <div class="content">
@@ -296,6 +364,13 @@
         </a>
     </div>
     <div class="card">
+        <div class="content">
+            <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+            <br>
+            <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+        </div>
+    </div>
+    <div class="card">
         <a href="#">
             <img src="mimg/Migration.jpg" alt="Migration">
             <div class="content">
@@ -306,12 +381,17 @@
                         <i class="fa-solid fa-eye"></i>
                         <i class="fa-solid fa-star"></i>
                         <h6>6.3</h6>
-                       
                     </div>
-
                 </h6>
             </div>
-            
+        </a>
+</div>
+<div class="card">
+    <div class="content">
+        <p>Description:<br> Batman faces the ultimate threat while confronting his enigmatic arch-nemesis, The Joker.</p>
+        <br>
+        <p>Actors:<br> Christian Bale, Heath Ledger, Aaron Eckhart</p>
+    </div>
 </div>
 <div class="card">
     <a href="#">
@@ -460,7 +540,7 @@
         </div>
     
 </div>
-</div>
-
+</div> -->
+<script src="MoviePage.js"></script>
 </body>
 </html>

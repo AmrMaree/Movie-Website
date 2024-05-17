@@ -239,6 +239,7 @@ header nav .end_bx .user img {
   align-items: center;
   overflow: auto;
   scroll-behavior: smooth;
+  /* border: 1px solid #fff; */
 }
 .movie_bx_1::-webkit-scrollbar {
   display: none;
@@ -251,9 +252,10 @@ header nav .end_bx .user img {
 /* movies box java class end  */
 
 .movie_bx_1 .card {
-  min-width: 140px;
-  height: 260px;
+  min-width: 160px;
+  height: 270px;
   margin: 0px 5px;
+  /* border: 1px solid #fff; */
 }
 
 .movie_bx_1 .card:nth-last-child(1) {
@@ -371,14 +373,26 @@ header nav .end_bx .user img {
   margin: auto;
   overflow: unset;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   padding: 20px 0px;
+}
+
+.movie_bx_2 .allCard {
+  display: flex;
 }
 
 .movie_bx_2 .card {
   width: 140px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
+
+.movie_bx_2 .card .content {
+  word-break: break-all;
+  font-size: 15px;
+  font-weight: 500;
+  color: #cccccc;
+}
+
 .cato_bx2 {
   position: relative;
   overflow: visible;
@@ -403,41 +417,7 @@ header nav .end_bx .user img {
 button:nth-child(5) {
   padding: 4px 15px;
   position: relative;
-  background: rgb(184, 184, 184, 0.1) !important;
-}
-
-.cato_bx2 .right_cato {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cato_bx2 .right_cato i {
-  color: yellow;
-  font-size: 13px;
-  margin-right: 5px;
-}
-
-.cato_bx2 .right_cato input[type="range"] {
-  -webkit-appearance: none;
-  background: red !important;
-  border-radius: 20px;
-  height: 7px;
-}
-
-.cato_bx2 .right_cato input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #fff !important;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.cato_bx2 .right_cato span {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  margin-left: 10px;
+  /* background: rgb(184, 184, 184, 0.1) !important; */
 }
 
 .cato_bx2 button .year_bx {
@@ -474,8 +454,8 @@ button:nth-child(5) {
 .cato_bx2 button .year_bx li {
   list-style-type: none;
   font-size: 15px;
-  font-weight: 600;
   padding: 5px;
+  font-weight: 600;
   color: #fff;
   transition: 0.3s linear;
 }

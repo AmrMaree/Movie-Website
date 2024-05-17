@@ -1,28 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-}
-.reddit-sans-Fonterito {
+body {
+  background: rgb(17, 16, 16) !important;
+  /* color: rgb(253, 253, 253); */
+  margin: 0;
   font-family: "Reddit Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
 }
+
 html {
   scroll-behavior: smooth;
 }
-body {
-  /* display: grid; */
-  /* height: 100%;
+
+.image-container {
+  position: relative;
   width: 100%;
-  place-items: center;
-  text-align: center; */
-  font-family: "Poppins", sans-serif;
-  background: rgb(17, 16, 16) !important;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  filter: blur(0.8px);
+  filter: sepia(0) saturate(0) brightness(0.1);
+}
+
+figcaption {
+  position: absolute;
+  left: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 5%;
+  font-style: italic;
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  /* background-color: rgba(255, 255, 255, 0); */
+  font-weight: 600;
+  margin-left: 100px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  background: linear-gradient(to right, rgb(17, 15, 15), rgb(255, 255, 255));
+  /* pointer-events: none; */
+}
+
+.small-text {
+  font-size: 25px;
+  font-style: normal;
+  color: red;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.separator {
+  border-top: 2px solid rgb(124, 122, 122);
+  width: 100%;
+  margin: 10px 0;
+}
+
+.text-section {
+  color: rgb(255, 253, 253);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  margin-left: 100px;
+}
+
+.text-section h3 {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
 header nav {
   width: 100%;
   height: 10%;
@@ -42,6 +96,7 @@ header nav {
 
 header nav .logo img {
   width: 100px;
+  filter: brightness(2);
 }
 
 header nav .end_bx ul {
@@ -173,124 +228,4 @@ header nav .end_bx .user img {
   height: 100%;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.container {
-  position: absolute;
-  width: 0px;
-  left: 360px;
-  top: 200px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.container .star-widget {
-  padding: 62px 63px 42px 63px;
-  border: 1px solid #444;
-  border-radius: 15px;
-}
-.container .post {
-  padding: 82px 63px 132px 63px;
-  border: 1px solid #444;
-  border-radius: 15px;
-  display: none;
-}
-.container .star-widget .Rate {
-  padding-top: 20px;
-}
-.container .text {
-  font-size: 25px;
-  color: #666;
-  font-weight: 500;
-}
-.container .post .edit {
-  position: absolute;
-  left: 570px;
-  top: 170px;
-  font-size: 16px;
-  color: red;
-  font-weight: 500;
-  cursor: pointer;
-}
-.container .star-widget .Rate {
-  position: absolute;
-  left: 550px;
-  top: 0px;
-  font-size: 25px;
-  color: #666;
-  font-weight: 500;
-}
-.container .post .edit:hover {
-  text-decoration: underline;
-}
-.container .star-widget input {
-  display: none;
-}
-.star-widget label {
-  font-size: 40px;
-  color: #444;
-  padding: 10px;
-  float: right;
-  transition: all 0.2s ease;
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label {
-  color: rgb(221, 201, 49);
-}
-input:checked ~ label {
-  color: rgb(221, 201, 49);
-}
-input#rate-5:checked ~ label {
-  color: rgb(221, 201, 49);
-  text-shadow: 0 0 20px #952;
-}
-.container form {
-  display: none;
-}
-input:checked ~ form {
-  display: block;
-}
-form .textarea {
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-}
-form .textarea textarea {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  color: #eee;
-  border: 1px solid #333;
-  border-radius: 15px;
-  background: #222;
-  padding: 10px;
-  font-size: 17px;
-  resize: none;
-}
-.textarea textarea:focus {
-  border-color: #444;
-}
-form .btn {
-  height: 45px;
-  width: 100%;
-  margin: 15px 0;
-}
-form .btn button {
-  padding: 4px 30px;
-  background: red;
-  border: none;
-  outline: none;
-  color: #fff;
-  border-radius: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: 0.3s linear;
-}
-form .btn button:hover {
-  background: #1b1b1b;
 }
