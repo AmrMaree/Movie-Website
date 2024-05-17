@@ -373,7 +373,7 @@ header nav .end_bx .user img {
   margin: auto;
   overflow: unset;
   flex-wrap: wrap;
-
+  /* justify-content: space-between; */
   padding: 20px 0px;
 }
 
