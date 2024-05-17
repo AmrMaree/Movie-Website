@@ -189,15 +189,15 @@ header nav .end_bx .user img {
   border-radius: 15px;
   display: none;
 }
- .container .star-widget .movie-info{
-  color:rgb(255, 255, 255, 0.7); 
- }
+.container .star-widget .movie-info {
+  color: rgb(255, 255, 255, 0.7);
+}
 .container .star-widget .Rate {
   padding-top: 20px;
 }
 .container .text {
   font-size: 25px;
-  color:rgb(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255, 0.7);
   font-weight: 500;
 }
 .container .post .edit {
