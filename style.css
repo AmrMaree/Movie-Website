@@ -55,7 +55,7 @@ header::after {
 header nav {
   width: 100%;
   height: 10%;
-  /*border: 1.3px solid rgb(255,255,255,.1);*/
+  border: 1.3px solid rgb(255, 255, 255, 0.1);
   padding: 0px 5%;
   display: flex;
   align-items: center;
@@ -367,12 +367,12 @@ header .slider_btns h6:nth-child(1) {
 
 /* Category Box Start*/
 
-.cato_bx {
-  position: relative;
+/*.cato_bx {
+  position: relative; 
   width: 90%;
   height: auto;
   margin: auto;
-  /* border: 1px solid #fff; */
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   padding: 20px 40px 20px 0px;
@@ -424,7 +424,7 @@ header .slider_btns h6:nth-child(1) {
 }
 .cato_bx .cato_button_active {
   background: rgb(184, 184, 184, 0.2) !important;
-}
+}*/
 
 /*Movie Box*/
 .movie_bx_1 {
@@ -573,21 +573,6 @@ header .slider_btns h6:nth-child(1) {
 .movie_bx_1 button:nth-child(2)::before {
   left: -7px;
   top: -1px;
-}
-
-.movie_bx_2 {
-  width: 90%;
-  height: auto;
-  margin: auto;
-  overflow: unset;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 0px;
-}
-
-.movie_bx_2 .card {
-  width: 140px;
-  margin: 10px auto;
 }
 
 /*Video box Start*/
@@ -845,7 +830,7 @@ header .slider_btns h6:nth-child(1) {
 
 /*Video box end*/
 
-.cato_bx2 {
+/* .cato_bx2 {
   position: relative;
   overflow: visible;
   height: 30px;
@@ -957,7 +942,7 @@ button:nth-child(5) {
 .cato_bx2 button .letter_bx li {
   font-size: 16px;
   font-weight: 600;
-}
+} */
 
 /* JavaScript Classes Start */
 .cato_bx2 .show_year1 .year_bx {
