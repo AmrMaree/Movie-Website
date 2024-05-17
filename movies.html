@@ -64,20 +64,20 @@
     <div class="cato_bx cato_bx2">
         <div class="left_cato">
             <button>Sort by:</button>
-            <button>All</button>
-            <button>Latest</button>
+            <button onclick="showAllMovies()">All</button>
+            <button onclick="sortByMostRecent()">Latest</button>
             <button id="year">Year <i class="fa-solid fa-angle-down"></i>
             <div class="year_bx">   
-                <li>2023</li>
-                <li>2022</li>
-                <li>2021</li>
-                <li>2020</li>
-                <li>2019</li>
-                <li>2018</li>
-                <li>2017</li>
-                <li>2016</li>
-                <li>2015</li>
-                <li>2014</li>
+                <li onclick="filterByYear(2023)">2023</li>
+                <li onclick="filterByYear(2022)">2022</li>
+                <li onclick="filterByYear(2021)">2021</li>
+                <li onclick="filterByYear(2020)">2020</li>
+                <li onclick="filterByYear(2019)">2019</li>
+                <li onclick="filterByYear(2018)">2018</li>
+                <li onclick="filterByYear(2017)">2017</li>
+                <li onclick="filterByYear(2016)">2016</li>
+                <li onclick="filterByYear(2015)">2015</li>
+                <li onclick="filterByYear(2014)">2014</li>
             </div>
             </button>
         </div>

@@ -17,17 +17,6 @@ search_icon.addEventListener('click', () => {
 // })
 
 
-// let mvoes_bx_1 = document.getElementById('mvoes_bx_1');
-// let left_scroll1 = document.getElementById('left_scroll1');
-// let right_scroll1 = document.getElementById('right_scroll1');
-
-// left_scroll1.addEventListener('click', () => {
-//     mvoes_bx_1.scrollLeft -= 150;
-// })
-// right_scroll1.addEventListener('click', () => {
-//     mvoes_bx_1.scrollLeft += 150;
-// })
-
 
 // year and a-z box start 
 let year = document.getElementById('year');
@@ -55,3 +44,89 @@ function loadMovies(category) {
     });
 }
 
+function showAllMovies() {
+    // Get all movie cards
+    var movieCards = document.querySelectorAll('.allCard');
+
+    // Loop through each card
+    movieCards.forEach(function(card) {
+        // Display all cards
+        card.style.display = 'flex';
+    });
+}
+
+function sortByMostRecent() {
+    // Get the container of the movie cards
+    var container = document.getElementById('movies-container');
+
+    // Get all movie cards as an array
+    var movieCards = Array.from(container.getElementsByClassName('allCard'));
+
+    // Extract the movie cards that contain dates (i.e., have an image)
+    var moviesWithDates = movieCards.filter(card => card.querySelector('img'));
+
+    // Sort the cards by the date (most recent first)
+    moviesWithDates.sort(function(a, b) {
+        // Get the year of each movie from the span inside h6
+        var yearA = parseInt(a.querySelector('h6 span').textContent);
+        var yearB = parseInt(b.querySelector('h6 span').textContent);
+        return yearB - yearA;
+    });
+
+    // Clear the container
+    container.innerHTML = '';
+
+    // Append the sorted movie cards back to the container
+    moviesWithDates.forEach(function(card) {
+        container.appendChild(card);
+    });
+
+    // Also append the description cards if they exist
+    var descriptionCards = movieCards.filter(card => !card.querySelector('img'));
+    descriptionCards.forEach(function(card) {
+        container.appendChild(card);
+    });
+}
+
+function filterByYear(year) {
+    // Get all movie cards
+    var movieCards = document.querySelectorAll('.allCard');
+
+    // Loop through each card
+    movieCards.forEach(function(card) {
+        // Get the year of the movie from the span inside h6
+        var movieYear = card.querySelector('h6 span');
+        if (movieYear) {
+            // Display the card if the year matches
+            if (parseInt(movieYear.textContent) === year) {
+                card.style.display = 'flex';
+            } else {
+                // Hide the card if the year doesn't match
+                card.style.display = 'none';
+            }
+        } else {
+            // Hide the card if it doesn't have a year (description-only cards)
+            card.style.display = 'none';
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to filter movies based on search term
+    function filterMovies() {
+        const searchInput = document.getElementById('search').value.trim().toLowerCase();
+        const movieCards = document.querySelectorAll('.allCard');
+
+        movieCards.forEach(card => {
+            const movieTitle = card.querySelector('h5').textContent.toLowerCase();
+            if (movieTitle.includes(searchInput)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Add event listener to the search button
+    document.getElementById('search_icon').addEventListener('click', filterMovies);
+});
