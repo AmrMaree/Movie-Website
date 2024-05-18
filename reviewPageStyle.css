@@ -8,7 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  display: grid;
   height: 100%;
+  width: 100%;
   place-items: center;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -170,13 +172,13 @@ header nav .end_bx .user img {
 .container {
   position: absolute;
   width: 0px;
-  left: 365px;
-  top: 230px;
+  left: 360px;
+  top: 200px;
   padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .container .star-widget {
   padding: 62px 63px 42px 63px;
@@ -189,15 +191,12 @@ header nav .end_bx .user img {
   border-radius: 15px;
   display: none;
 }
-.container .star-widget .movie-info {
-  color: rgb(255, 255, 255, 0.7);
-}
 .container .star-widget .Rate {
   padding-top: 20px;
 }
 .container .text {
   font-size: 25px;
-  color: rgb(255, 255, 255, 0.7);
+  color: #666;
   font-weight: 500;
 }
 .container .post .edit {
@@ -214,7 +213,7 @@ header nav .end_bx .user img {
   left: 550px;
   top: 0px;
   font-size: 25px;
-  color: rgb(255, 255, 255, 0.7);
+  color: #666;
   font-weight: 500;
 }
 .container .post .edit:hover {
@@ -225,7 +224,7 @@ header nav .end_bx .user img {
 }
 .star-widget label {
   font-size: 40px;
-  color: rgb(255, 255, 255, 0.7);
+  color: #444;
   padding: 10px;
   float: right;
   transition: all 0.2s ease;
